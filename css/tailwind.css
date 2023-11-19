@@ -1,0 +1,13 @@
+@import url(./settings.css);
+@import url(./animation.css);
+@import url(./mobilemenu.css);
+
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .hoverset{
+        @apply transition-all duration-[200ms]
+    }
+}

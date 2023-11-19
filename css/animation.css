@@ -1,0 +1,24 @@
+.anim{
+    perspective: 800px;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotateY(-25deg);
+    }
+    to {
+      transform: rotateY(25deg);
+    }
+  }
+ .animcenter {
+    width: 100%;
+    height: 100%;
+    animation-name: rotate;
+    animation-duration: 4000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 300ms;
+  }
+  body > div.h-\[760px\].bg-\[\#1C1E53\].flex.justify-center.items-center.bigdesktop\:gap-\[50px\] > div.anim.relative > img{
+    animation-name: rotate;
+  }
